@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel = "stylesheet" href = "hw1.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap" rel="stylesheet" />
+        <title>Tianran's Dingus & Widget</title>
+        <meta charset="UTF-8">
+    </head>
+    <div class="header">
+        <img src="images/dw-logo.png" alt="logo" />
+        <header><h1>Global Dashboard</h1></header>
+    </div>
+    
+
+    <div class="container">
+        <div class = 'column'>
+            <h2>Dingus</h2>
+            <p>0</p>
+        </div>
+        <div class = 'column'>
+            <h2>Widget</h2>
+            <p>0</p>
+        </div>  
+        <div class = 'column'>
+            <h2>Sales</h2>
+            <p>
+            <span style='color:green'>$</span>
+            <span style='color:blue'>0.00</span>
+            </p>
+        </div>
+    </div>
+    <hr>
+    
+    <div class="images">
+        <div class=figure>
+        <p><img  src="images/pie.png" alt = "pie">
+            <figcaption>Total Sales Breakdown</figcaption>
+          
+        </div>
+        <div class=figure>
+            <p><img  src="images/bar.png" alt = "bar">
+                <figcaption>Sales Per Day</figcaption>
+        </div>
+        <div class=figure>
+          <iframe src = "https://app.zingsoft.com/demos/view/DK4RG3XN" style="border:none;"></iframe>
+          <a href = "https://app.zingsoft.com/demos/view/DK4RG3XN" >Source</a>
+        </div>
+      </div>
+      
+    <br>
+    <hr>
+   
+
+    
+    <table align = "center" class="tg">
+      <colgroup><col style="background-color:#9b9b9b"></colgroup>
+      <caption>Order History</caption>
+      <theader>
+        <tr>
+          <th class="tg-6qw1" rowspan="2">ID#</th>
+          <th class="tg-baqh" rowspan="2">Data</th>
+          <th class="tg-baqh" colspan="2">Quantity</th>
+          <th class="tg-baqh" rowspan="2">Total</th>
+        </tr>
+        <tr>
+          <td class="tg-baqh">Dingus</td>
+          <td class="tg-baqh">Widget</td>
+        </tr>
+      </theader>
+        <tbody>
+        <tr>
+          <td class="tg-6qw1">1221</td>
+          <td class="tg-baqh">12/12/19</td>
+          <td class="tg-baqh">4</td>
+          <td class="tg-baqh">10</td>
+          <td class="tg-baqh">$12.33</td>
+        </tr>
+        <tr>
+          <td class="tg-6qw1">1222</td>
+          <td class="tg-baqh">12/21/19</td>
+          <td class="tg-baqh">1</td>
+          <td class="tg-baqh">2</td>
+          <td class="tg-baqh">$27.34</td>
+        </tr>
+        <tr>
+          <td class="tg-6qw1">1223</td>
+          <td class="tg-baqh">1/5/20</td>
+          <td class="tg-baqh">14</td>
+          <td class="tg-baqh">19</td>
+          <td class="tg-baqh">$345.33</td>
+        </tr>
+        <tr>
+          <td class="tg-6qw1" colspan="5">©2020 D&amp;W Worldwide.</td>
+        </tr>
+      </tbody>
+      </table>
+    <hr>
+  
+    <body>
+    <main>
+    <div class="order">
+        <details>
+          <summary onclick='showDialog()'>Order Form</summary>
+          <dialog id='dialog'>
+            <p3>This section will work only after HW2!</p3 >
+        </dialog>
+        <script>
+            var dialog = document.querySelector('dialog');
+            function showDialog() {
+            console.log('Fired');
+            dialog.show();
+            setTimeout(function () {
+              dialog.close();
+            }, 3000);
+          }
+        </script>
+        <hr>
+        <form>
+          
+            <label for="xx">Dingus<label>
+            <input type="text">
+            <label for="yy">@</label>
+            <input type="text">
+            <label for="yy">=$</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="xx">Widget</label>
+            <input type="text">
+            <label for="yy">@</label>
+            <input type="text">
+            <label for="yy">=$</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="yy">Total $</label>
+            <input type="text">
+            <br>
+            <br>
+              <label for="yy">Shipping</label>
+            <input type="text">
+            
+            <br>
+            <br>
+            <h3>Payment</h3>
+            <div class="pay">Visa<br>MasterCard<br>PayPal</div>
+            <br>
+            <label for="comments">Comment</label>
+            <textarea name="comments" id="comments"></textarea>
+            <br>
+            <br>
+            <button type="button">Cancel</button>
+            <button type="button">Order</button>
+          </form>   
+        </details>
+        <br>
+        <br>
+    </div>
+  </main>
+  </body>
+    <div class="Disclaimer">
+      <section>
+        <p2>Disclaimer: This page is provided <em>as is</em></p2>
+        <br>
+        <br>
+        <p2>Notes</p2>
+        <br>
+        <br>
+        <li>Your order will leave warehouse in 3-5 days</li>
+        <li>If you have anu question please contact us at 123456789</li>
+        <li>D&W is a proud supporter of the <i>Stuart Collection</i></li>
+      </section>
+        <br>
+        <footer><em><address> 9500 Gilman Dr, La Jolla, CA 92093</address></em></footer>
+
+    </div>
+
+    
+</html>
